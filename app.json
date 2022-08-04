@@ -1,10 +1,9 @@
 {
-    "name": "Media Search bot",
+    "name": "Nurse Media Search bot",
     "description": "When you going to send file on telegram channel/group this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
       "best",
-      "indian",
       "pyrogram",
       "media",
       "search",
@@ -12,8 +11,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Mahesh0253/Media-Search-bot",
-    "repository": "https://github.com/Mahesh0253/Media-Search-bot",
+    "website": "https://github.com/docugs/NurseMediaSearchBot",
+    "repository": "https://github.com/docugs/NurseMediaSearchBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
