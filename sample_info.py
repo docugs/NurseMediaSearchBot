@@ -1,5 +1,5 @@
 # Bot information
-SESSION = 'NurseMediaSearchBot'
+SESSION = 'Media_search'
 USER_SESSION = 'User_Bot'
 API_ID = 12345
 API_HASH = '0123456789abcdef0123456789abcdef'
@@ -7,7 +7,6 @@ BOT_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'
 USERBOT_STRING_SESSION = ''
 
 # Bot settings
-MAX_RESULTS = 10
 CACHE_TIME = 300
 USE_CAPTION_FILTER = False
 
@@ -24,12 +23,10 @@ COLLECTION_NAME = 'channel_files'  # If you are using the same database, then us
 
 # Messages
 START_MSG = """
-**Hi {}👋
+**Hi, I'm Media Search bot**
 
-I'm Nurse Media Search Bot**
-
-You can start searching by the "Search Media 🔎
+Here you can search files in inline mode. Just press follwing buttons and start searching.
 """
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = 'You cant use this bot untill you join our bot🙁 So please join our Updates Channel '
+INVITE_MSG = 'Please join @.... to use this bot'

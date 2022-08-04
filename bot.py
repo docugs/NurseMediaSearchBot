@@ -1,4 +1,3 @@
-import os
 import logging
 import logging.config
 
@@ -6,18 +5,18 @@ import logging.config
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.ERROR)
 
-from pyromod import listen
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from utils import Media
-from info import SESSION, APP_ID, API_HASH, BOT_TOKEN
+from info import SESSION, API_ID, API_HASH, BOT_TOKEN
+
 
 class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            session_name=SESSION,
-            api_id=APP_ID,
+            name=SESSION,
+            api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
             workers=50,
@@ -34,7 +33,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        print("Nurse Media Search Bot is Stopped Now")
+        print("Bot stopped. Bye.")
 
 
 app = Bot()

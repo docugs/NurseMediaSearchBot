@@ -14,7 +14,7 @@ from utils import save_file
 async def main():
     """Save old files in database with the help of user bot"""
 
-    user_bot = Client(USER_SESSION, API_ID, API_HASH)
+    user_bot = Client('User-bot', API_ID, API_HASH, session_string=USER_SESSION)
     bot = Client(SESSION, API_ID, API_HASH, bot_token=BOT_TOKEN)
 
     await user_bot.start()
@@ -22,12 +22,8 @@ async def main():
 
     try:
         for channel in CHANNELS:
-            async for user_message in user_bot.iter_history(channel):
-                message = await bot.get_messages(
-                    channel,
-                    user_message.message_id,
-                    replies=0,
-                )
+            async for user_message in user_bot.get_chat_history(channel):
+                message = await bot.get_messages(channel, user_message.id, replies=0)
                 for file_type in ("document", "video", "audio"):
                     media = getattr(message, file_type, None)
                     if media is not None:
