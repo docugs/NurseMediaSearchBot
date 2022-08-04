@@ -1,5 +1,6 @@
 <h1 align="center"><b>Nurse Media Search Bot </b></h1>
 
+Credits to #Navi
 # Features 
 
 * Index channel or group files for inline search.
@@ -9,7 +10,7 @@
 * Can view user stats in bot's database
 
 <p align="center">
-  <img src="https://telegra.ph/file/c705fac44db2b8d7f47e7.jpg"></p>
+  <img src="https://telegra.ph/file/ae8d0b4f61ae5d4121671.png"></p>
 
 
 
@@ -23,7 +24,7 @@
 <br>
 
 <p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/docugs/NurseMediaSearchBot/tree/Dev">
+  <a href="https://heroku.com/deploy?template=https://github.com/docugs/NurseMediaSearchBot">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 </p>
