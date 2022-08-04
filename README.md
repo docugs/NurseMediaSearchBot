@@ -82,8 +82,6 @@ total - Show total of saved files
 delete - Delete file from database
 index - Index all files from channel or group
 logger - Get log file
-stats - get recent user stats
-broadcast - broascast any message to all the users of the bot
 ```
 
 ## Tips
